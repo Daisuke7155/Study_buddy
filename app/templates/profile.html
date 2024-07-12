@@ -1,0 +1,25 @@
+<!-- app/templates/profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.username.label }} {{ form.username }}<br>
+        {{ form.email.label }} {{ form.email }}<br>
+        {{ form.bio.label }} {{ form.bio }}<br>
+        {{ form.location.label }} {{ form.location }}<br>
+        {{ form.interests.label }} {{ form.interests }}<br>
+        {{ form.qualifications.label }} {{ form.qualifications }}<br>
+        {{ form.education.label }} {{ form.education }}<br>
+        {{ form.work_experience.label }} {{ form.work_experience }}<br>
+        {{ form.skills.label }} {{ form.skills }}<br>
+        {{ form.learning_interests.label }} {{ form.learning_interests }}<br>
+        {{ form.submit }}
+    </form>
+</body>
+</html>
